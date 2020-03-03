@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <title>Node SerialPort</title>
+</head>
+
+<body>
+    <h1>Node SerialPort</h1>
+
+    <a-scene>
+        <a-assets>
+            <!-- <a-asset-item id="modelo" src="models/scene.gltf"> -->
+        </a-assets>
+        <a-box id="boxId" position="0 1.25 -5" rotation="0 0 0" color="#FF5733"></a-box>
+        <!-- <a-entity gltf-model="#modelo" position="0 1.25 -5" scale=".2 .2 .2"></a-entity> -->
+        <a-sky color="#fff"></a-sky>
+    </a-scene>
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script>
+        const socket = io();
+        socket.on('arduino:data', function (data) {
+            console.log(data.x + ' ' + data.y + ' ' + data.z);
+            document.getElementById('boxId').setAttribute('rotation', { x: -data.y, y: parseInt(data.x)-20, z: -data.z });
+        })
+    </script>
+</body>
+
+</html>

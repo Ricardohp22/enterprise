@@ -1,0 +1,16 @@
+Placa-diadema 
+medidas 50x45mm
+consideraciones
+-led indicador conexion
+-led indicador de bateria baja
+-microswitch encendido
+-pin de out del regulador conectado a entrada analógica para comprobar voltaje
+
+entradas
+-prog spi
+-prog serial gnd,rx,tx,dtr
+-puerto bateria
+
+salidas
+-bluetooth
+

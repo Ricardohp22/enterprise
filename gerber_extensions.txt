@@ -1,0 +1,10 @@
+Extensiones gerber files
+
+File Extension	PCB Layer
+.cmp	Top Copper
+.sol	Bottom Copper
+.stc	Top Soldermask
+.sts	Bottom Soldermask
+.plc	Top Silkscreen
+.pls	Bottom Silkscreen
+.ncd	Drill

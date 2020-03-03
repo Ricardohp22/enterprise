@@ -1,0 +1,10 @@
+Relacion de componentes
+
+r1-1k
+r2-10ohm
+d1-1n4728
+r3-10k
+r4-10k
+c1-22pf
+c2-22pf
+c3-.1uf

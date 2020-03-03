@@ -1,0 +1,4 @@
+Relacion de componentes
+
+r8-2.7k para trans smd, o 8.2k para bc547b
+r9-2.7k

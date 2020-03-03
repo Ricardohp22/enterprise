@@ -1,0 +1,7 @@
+{
+    "sketch": "appVS.ino",
+    "board": "attiny:avr:ATtinyX5",
+    "port": "COM10",
+    "programmer": "AVRISP mkII",
+    "configuration": "cpu=attiny25,clock=internal1"
+}

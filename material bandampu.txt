@@ -1,0 +1,17 @@
+banda para cabeza			1x$200
+atmega328p smd				3x$50
+leds smd				5x$5
+capacitores 22pf smd			10x$1
+xtal 16mhz smd				4x$16
+regulador 5v smd 78T05A			2x$20
+switch micro				2x$15
+conectores micro 2 y 4 vias		5x$15
+mlticontacto				1x$80
+bateria lipo 400mAh 6x20x35		1x$100
+cargador 1 celda			1x$60
+cable proto				2m
+jumpers macho hembra cortos
+modulo wifi
+
+
+

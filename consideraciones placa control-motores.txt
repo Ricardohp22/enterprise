@@ -1,0 +1,10 @@
+control-motores consideraciones
+entradas 
+-24v
+-5v
+-prog isp
+-prog serial
+
+salidas
+-analog-motores
+-frenos
