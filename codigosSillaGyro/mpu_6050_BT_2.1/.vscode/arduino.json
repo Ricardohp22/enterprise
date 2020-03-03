@@ -1,0 +1,4 @@
+{
+    "sketch": "mpu_6050_BT_2.1.ino",
+    "board": "arduino:avr:uno"
+}

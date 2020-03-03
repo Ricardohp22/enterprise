@@ -1,0 +1,4 @@
+{
+    "sketch": "distanciaSensorLaser.ino",
+    "board": "arduino:avr:uno"
+}
