@@ -1,0 +1,4 @@
+{
+    "sketch": "moduloSensoresLaser.ino",
+    "board": "arduino:avr:uno"
+}

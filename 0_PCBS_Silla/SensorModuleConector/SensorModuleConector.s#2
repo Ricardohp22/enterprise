@@ -371,8 +371,8 @@
 </class>
 </classes>
 <parts>
-<part name="U$2" library="cp150" deviceset="CP150_1X4" device=""/>
-<part name="U$3" library="cp150" deviceset="CP150_1X4" device=""/>
+<part name="S1" library="cp150" deviceset="CP150_1X4" device=""/>
+<part name="S2" library="cp150" deviceset="CP150_1X4" device=""/>
 <part name="U$4" library="cp150" deviceset="CP150_1X4" device=""/>
 <part name="U$5" library="cp150" deviceset="CP150_1X4" device=""/>
 <part name="U$6" library="cp150" deviceset="CP150_1X4" device=""/>
@@ -388,8 +388,8 @@
 <plain>
 </plain>
 <instances>
-<instance part="U$2" gate="G$1" x="-20.32" y="45.72" rot="R180"/>
-<instance part="U$3" gate="G$1" x="-20.32" y="27.94" rot="R180"/>
+<instance part="S1" gate="G$1" x="-20.32" y="45.72" rot="R180"/>
+<instance part="S2" gate="G$1" x="-20.32" y="27.94" rot="R180"/>
 <instance part="U$4" gate="G$1" x="-20.32" y="10.16" rot="R180"/>
 <instance part="U$5" gate="G$1" x="-20.32" y="-7.62" rot="R180"/>
 <instance part="U$6" gate="G$1" x="-20.32" y="-25.4" rot="R180"/>
@@ -419,12 +419,12 @@
 <segment>
 <wire x1="-12.7" y1="45.72" x2="-10.16" y2="45.72" width="0.1524" layer="91"/>
 <label x="-7.62" y="45.72" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="3"/>
+<pinref part="S1" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="-12.7" y1="27.94" x2="-10.16" y2="27.94" width="0.1524" layer="91"/>
 <label x="-7.62" y="27.94" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="3"/>
+<pinref part="S2" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="-12.7" y1="10.16" x2="-10.16" y2="10.16" width="0.1524" layer="91"/>
@@ -476,12 +476,12 @@
 <segment>
 <wire x1="-12.7" y1="43.18" x2="-10.16" y2="43.18" width="0.1524" layer="91"/>
 <label x="-7.62" y="43.18" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="2"/>
+<pinref part="S1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-12.7" y1="25.4" x2="-10.16" y2="25.4" width="0.1524" layer="91"/>
 <label x="-7.62" y="25.4" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="2"/>
+<pinref part="S2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-12.7" y1="7.62" x2="-10.16" y2="7.62" width="0.1524" layer="91"/>
@@ -533,12 +533,12 @@
 <segment>
 <wire x1="-12.7" y1="40.64" x2="-10.16" y2="40.64" width="0.1524" layer="91"/>
 <label x="-7.62" y="40.64" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="1"/>
+<pinref part="S1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-12.7" y1="22.86" x2="-10.16" y2="22.86" width="0.1524" layer="91"/>
 <label x="-7.62" y="22.86" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="1"/>
+<pinref part="S2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-12.7" y1="5.08" x2="-10.16" y2="5.08" width="0.1524" layer="91"/>
@@ -626,7 +626,7 @@
 <segment>
 <wire x1="-12.7" y1="48.26" x2="-10.16" y2="48.26" width="0.1524" layer="91"/>
 <label x="-7.62" y="48.26" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="4"/>
+<pinref part="S1" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="8"/>
@@ -638,7 +638,7 @@
 <segment>
 <wire x1="-12.7" y1="30.48" x2="-10.16" y2="30.48" width="0.1524" layer="91"/>
 <label x="-7.62" y="30.48" size="1.778" layer="95"/>
-<pinref part="U$3" gate="G$1" pin="4"/>
+<pinref part="S2" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="6"/>
