@@ -12,7 +12,7 @@ void setup() {
   pinMode(Echo, INPUT);  //pin como entrada
   digitalWrite(Trigger, LOW);//Inicializamos el pin con 0
 }
-
+byte validador = 0;
 void loop()
 {
 
@@ -20,24 +20,30 @@ void loop()
   long d; //distancia en centimetros
 
   digitalWrite(Trigger, HIGH);
-  delayMicroseconds(10);          //Enviamos un pulso de 10us
+  delayMicroseconds(20);          //Enviamos un pulso de 10us
   digitalWrite(Trigger, LOW);
   
   t = pulseIn(Echo, HIGH, 6000); //obtenemos el ancho del pulso
   d = t/59;             //escalamos el tiempo a una distancia en cm
+
   if((d < 40) && (d > 1)){
-//    pauseTime = map(d, 0,40, 5, 500);
-//    digitalWrite(buzzer, HIGH);
-//    delay(40);
-//    digitalWrite(buzzer, LOW);
-//    delay(pauseTime);
+    if(validador > 19){
+      validador = 19;
+    }
+    validador ++;
+    
+    
+    //delay(1500);
   }else{
-    d = 100;
+    if(validador < 1){
+      validador = 1;
+    }
+    validador --;
   }
-  if(d < 80){
+  if(validador==20){
     digitalWrite(led, HIGH);
-    delay(1500);
-  }else{
+  }else if(validador == 0){
     digitalWrite(led, LOW);
   }
+  delay(10);
 }
