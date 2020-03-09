@@ -1,0 +1,19 @@
+Relacion de componentes
+
+r1-1k
+r2-1k
+r3-7.5k
+r4-33k
+r5-10k
+r6-330
+r7-330
+r8-330
+r9-330
+r10-330
+r11-750
+r12-1.5k
+c1-100uf 16v
+c2-100uf 16v
+c3-22pf
+c4-22pf
+c5-1uf

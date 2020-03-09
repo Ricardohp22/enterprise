@@ -18,28 +18,33 @@ void setup()
   pinMode(pwm, OUTPUT);
   pinMode(buzzer, OUTPUT);
   // Iniciar sensor
-  Serial.println("VL53L0X test");
+  //Serial.println("VL53L0X test");
   if (!lox.begin())
   {
-    Serial.println(F("Error al iniciar VL53L0X"));
+    //Serial.println(F("Error al iniciar VL53L0X"));
     while (1)
       ;
   }
+    tone(buzzer, 523);
+  delay(100);
   //generar tono de 440Hz durante 1000 ms
-  tone(buzzer, 440);
-  delay(300);
+//  tone(buzzer, 440);
+//  delay(300);
   //generar tono de 523Hz durante 500ms, y detenerlo durante 500ms.
-  tone(buzzer, 523);
-  delay(300);
-  tone(buzzer, 400);
-  delay(300);
-  tone(buzzer, 523);
-  delay(400);
-  noTone(buzzer);
+//  tone(buzzer, 523);
+//  delay(300);
+//  tone(buzzer, 400);
+//  delay(300);
+//  tone(buzzer, 523);
+//  delay(400);
+//  noTone(buzzer);
   timeIni = millis();
 }
-void beep(byte dis)
+void beep(int dis)
 {
+  if(dis > 60){
+    dis = 60;
+  }
   int tiempoOFF = map(dis, 0, 60, 10, 1000);
   if ((millis() - timeIni) < 100)
   { //tiempo que dura encendido el buzzer
@@ -73,8 +78,7 @@ void beep(byte dis)
   }
 }
 
-int cont_sens[5];
-byte cuenta = 0;
+
 void loop()
 {
 
@@ -84,26 +88,16 @@ void loop()
 
   if (measure.RangeStatus != 4)
   {
-    distancia = measure.RangeMilliMeter / 10;
-    if (cuenta < 5)
-    {
-      cont_sens[cuenta];
-      cuenta++;
-    }else{
-      
-      for(byte i=0; i <= cuenta; i++){
-        cont_sens[i]
-      }
-      cuenta = 0;//AQUI ME QUEDE HACIENDO EL FILTRO DE LECTURAS
-    }
-    
+    distancia = measure.RangeMilliMeter / 10;    
+  }else{
+    distancia = 200;
   }
   if (distancia > distancia_maxima_deteccion)
   {
-    distancia = distancia_maxima_deteccion;
+    distancia = 200;
     bloqueaSonido = true;
     analogWrite(pwm, 0);
-    Serial.println("pwmValue igual a 0");
+    //Serial.println("pwmValue igual a 0");
   }
   else
   {
@@ -113,7 +107,7 @@ void loop()
       distancia = 5;
     }
     int pwmValue = map(distancia, 5, distancia_maxima_deteccion, 255, 50);
-    Serial.println(pwmValue);
+    //Serial.println(pwmValue);
     analogWrite(pwm, pwmValue);
   }
 
