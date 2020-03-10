@@ -1,6 +1,13 @@
 CONFIGURACION BLUETOOTH MAESTRO
+Baud Rate de configuracion: 38400
+Ambos NL & CR
+	 
 VERIFICAR QUE EL PASSWORD SEA EL MISMO DEL ESCLAVO
 
 AT+ROLE=1
 AT+CMODE=0
 AT+BIND=0021,13,05B08E
+
+CONSULTAR CONFIGURACIONES
+AT+PSWD?	->	Retorna password
+Para obtener la mac address, consultarla con alguna app
