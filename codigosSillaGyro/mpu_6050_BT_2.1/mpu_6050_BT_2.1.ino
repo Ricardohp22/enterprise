@@ -266,8 +266,8 @@ void loop()
         if (!digitalRead(offset))
         {
             //btn ofset
-            rollOfst = rollFin;
-            pitchOfst = pitchFin;
+            rollOfst += rollFin;
+            pitchOfst += pitchFin;
             alertOn();
             delay(250);
         }
