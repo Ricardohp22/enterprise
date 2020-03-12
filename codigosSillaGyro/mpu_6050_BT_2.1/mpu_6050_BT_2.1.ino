@@ -15,7 +15,7 @@
 #define pitchOfst 179
 #define rollOfst 175 */
 int yawOfst = 0;
-int pitchOfst = 0;
+int pitchOfst = -8;
 int rollOfst = 0;
 
 #define timeToSend 100
@@ -153,6 +153,10 @@ boolean timeOff = 1;
 
 boolean readyFlag = 1;
 boolean ready = 0;
+#define maxTimeToSleep 15000
+unsigned long lastTimeActive = 0;
+boolean isAwake = true;
+byte gestoWakeup = 0;
 void alertOn()
 {
     tone(buzzer, 523);
@@ -162,6 +166,28 @@ void alertOn()
     tone(buzzer, 523);
     delay(80);
     wdt_reset();
+    noTone(buzzer);
+}
+void alertBeep()
+{
+    tone(buzzer, 523);
+    delay(80);
+    noTone(buzzer);
+}
+void alertSleep()
+{
+    tone(buzzer, 523);
+    delay(120);
+    tone(buzzer, 400);
+    delay(350);
+    noTone(buzzer);
+}
+void alertWakeup()
+{
+    tone(buzzer, 400);
+    delay(350);
+    tone(buzzer, 523);
+    delay(120);
     noTone(buzzer);
 }
 void alertReady()
@@ -305,9 +331,11 @@ void loop()
         {
 
             ready = 1;
-            if(readyFlag){
+            if (readyFlag)
+            {
                 readyFlag = 0;
                 alertReady();
+                lastTimeActive = millis();
             }
             //     Serial.print("\tfinales\t");
             //     Serial.print(yawFin);
@@ -325,12 +353,55 @@ void loop()
                 Serial.print("/");
                 Serial.print(pitchFin); */
 
-                //Solo para pruebas, comentar en produccion
-                Serial.print(rollFin);
-                Serial.print("/");
-                Serial.print(pitchFin);
-                Serial.print("/");
-                Serial.println(analogRead(A0));
+                //Monitoreo de tiempo inacctivo
+                //magnitud del Vector
+                int vectorMagnitude = sqrt((rollFin * rollFin) + (pitchFin * pitchFin));
+                if (vectorMagnitude > 10)
+                {
+                    lastTimeActive = millis();
+                }
+                if ((millis() - lastTimeActive) > maxTimeToSleep)
+                {
+                    if (isAwake)
+                    {
+                        alertSleep();
+                    }
+                    isAwake = false;
+                }
+                else
+                {
+                    //Solo para pruebas, comentar en produccion
+                    if (isAwake)
+                    {
+                        Serial.print(vectorMagnitude);
+                        Serial.print("/");
+                        Serial.print(rollFin);
+                        Serial.print("/");
+                        Serial.println(pitchFin);
+                    }else{
+                        if(gestoWakeup == 0){
+                            if(rollFin > 20){
+                                gestoWakeup++;
+                                alertBeep();
+                            }
+                        }else if(gestoWakeup == 1){
+                            if(rollFin < -20){
+                                gestoWakeup++;
+                                alertBeep();
+                            }else if((pitchFin > 10) || (pitchFin < -10)){
+                                gestoWakeup = 0;
+                            }
+                        }else if(gestoWakeup == 2){
+                            if(vectorMagnitude < 12){
+                                gestoWakeup++;
+                            }
+                        }else{
+                            gestoWakeup = 0;
+                            alertWakeup();
+                            isAwake = true;
+                        }
+                    }
+                }
 
                 delay(10);
             }
