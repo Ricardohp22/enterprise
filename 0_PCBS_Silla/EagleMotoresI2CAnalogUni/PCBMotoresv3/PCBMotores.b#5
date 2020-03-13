@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="50" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -26,16 +26,16 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -2680,41 +2680,11 @@ MELF 0.25 W</description>
 <wire x1="6.35" y1="5.08" x2="6.35" y2="10.49" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="10.5" x2="6.35" y2="10.5" width="0.127" layer="21"/>
 <smd name="22" x="6.66" y="-14.19" dx="2" dy="1" layer="1"/>
-<wire x1="-6.3" y1="1.1" x2="-6.3" y2="-11.6" width="0.127" layer="20"/>
-<wire x1="6.3" y1="-2" x2="6.3" y2="-13.1" width="0.127" layer="20"/>
-<wire x1="-6.2" y1="-15.4" x2="-6.2" y2="-17.1" width="0.127" layer="20"/>
-<wire x1="-6.2" y1="-17.1" x2="6.3" y2="-17.1" width="0.127" layer="20"/>
-<wire x1="6.3" y1="-17.1" x2="6.3" y2="-15.3" width="0.127" layer="20"/>
-</package>
-</packages>
-</library>
-<library name="diode">
-<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
-Based on the following sources:
-&lt;ul&gt;
-&lt;li&gt;Motorola : www.onsemi.com
-&lt;li&gt;Fairchild : www.fairchildsemi.com
-&lt;li&gt;Philips : www.semiconductors.com
-&lt;li&gt;Vishay : www.vishay.de
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="DO214BA">
-<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
-<wire x1="-2.5" y1="1.35" x2="2.5" y2="1.35" width="0.254" layer="51"/>
-<wire x1="2.5" y1="1.35" x2="2.5" y2="-1.35" width="0.254" layer="51"/>
-<wire x1="2.5" y1="-1.35" x2="-2.5" y2="-1.35" width="0.254" layer="51"/>
-<wire x1="-2.5" y1="-1.35" x2="-2.5" y2="1.35" width="0.254" layer="51"/>
-<wire x1="-0.8" y1="0" x2="0.65" y2="0.95" width="0.254" layer="21"/>
-<wire x1="0.65" y1="0.95" x2="0.65" y2="-0.95" width="0.254" layer="21"/>
-<wire x1="0.65" y1="-0.95" x2="-0.8" y2="0" width="0.254" layer="21"/>
-<smd name="C" x="-2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
-<smd name="A" x="2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
-<text x="-2.64" y="1.736" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.64" y="-3.056" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2.85" y1="-0.7" x2="-2.6" y2="0.65" layer="51"/>
-<rectangle x1="2.6" y1="-0.7" x2="2.85" y2="0.65" layer="51"/>
-<rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
+<wire x1="-6.3" y1="1.1" x2="-6.3" y2="-11.6" width="0.127" layer="21"/>
+<wire x1="6.3" y1="-2" x2="6.3" y2="-13.1" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="-15.4" x2="-6.2" y2="-17.1" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="-17.1" x2="6.3" y2="-17.1" width="0.127" layer="21"/>
+<wire x1="6.3" y1="-17.1" x2="6.3" y2="-15.3" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -2798,6 +2768,38 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <smd name="C" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
 <text x="-1" y="1" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1" y="-2" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="diode">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO-214AC">
+<description>&lt;b&gt;SURFACE MOUNT GENERAL RECTIFIER&lt;/b&gt; JEDEC DO-214AC molded platic body&lt;p&gt;
+Method 2026&lt;br&gt;
+Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
+<wire x1="-2.15" y1="1.3" x2="2.15" y2="1.3" width="0.2032" layer="51"/>
+<wire x1="2.15" y1="1.3" x2="2.15" y2="-1.3" width="0.2032" layer="51"/>
+<wire x1="2.15" y1="-1.3" x2="-2.15" y2="-1.3" width="0.2032" layer="51"/>
+<wire x1="-2.15" y1="-1.3" x2="-2.15" y2="1.3" width="0.2032" layer="51"/>
+<wire x1="-1.035" y1="1.3" x2="1.025" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="1.025" y1="-1.3" x2="-1.035" y2="-1.3" width="0.2032" layer="21"/>
+<smd name="C" x="-2.025" y="0" dx="1.8" dy="2.4" layer="1"/>
+<smd name="A" x="2.025" y="0" dx="1.8" dy="2.4" layer="1" rot="R180"/>
+<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.825" y1="-1.1" x2="-2.175" y2="1.1" layer="51"/>
+<rectangle x1="2.175" y1="-1.1" x2="2.825" y2="1.1" layer="51" rot="R180"/>
+<rectangle x1="-1.065" y1="-1.225" x2="-0.39" y2="1.225" layer="21"/>
+<rectangle x1="-1.75" y1="-1.225" x2="-1.075" y2="1.225" layer="51"/>
 </package>
 </packages>
 </library>
@@ -3029,8 +3031,6 @@ design rules under a new name.</description>
 <element name="U$1" library="hc05-own" package="BLUETOOTH_SMD" value="HC-05_BASIC" x="42.3" y="38.78" rot="R90"/>
 <element name="R11" library="resistor" package="M1206" value="" x="51.79" y="18.42"/>
 <element name="R12" library="resistor" package="M1206" value="" x="51.78" y="14.14" rot="R180"/>
-<element name="D1" library="diode" package="DO214BA" value="" x="77.07" y="40.5" rot="R90"/>
-<element name="D2" library="diode" package="DO214BA" value="" x="73.71" y="40.44" rot="R90"/>
 <element name="R13" library="resistor" package="M1206" value="" x="70.07" y="37.04" rot="R270"/>
 <element name="Q2" library="transistor-small-signal" package="SC59" value="2SC3838T146" x="74.89" y="34.57" rot="R270"/>
 <element name="C6" library="rcl" package="153CLV-0505" value="" x="57.86" y="26.42"/>
@@ -3050,6 +3050,8 @@ design rules under a new name.</description>
 <attribute name="SPICETYPE" value="diode" x="81.6" y="40.6" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R15" library="resistor" package="M1206" value="" x="80.6" y="45.5"/>
+<element name="D1" library="diode" package="DO-214AC" value="" x="77.5" y="40.2" rot="R90"/>
+<element name="D2" library="diode" package="DO-214AC" value="" x="74" y="40.3" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$6">
@@ -3202,13 +3204,13 @@ design rules under a new name.</description>
 <wire x1="81.73" y1="33.71" x2="78.6" y2="33.71" width="0.4064" layer="1"/>
 <wire x1="78.6" y1="33.71" x2="75.19" y2="30.3" width="0.4064" layer="1"/>
 <polygon width="0.4064" layer="16" isolate="1">
-<vertex x="0.2" y="50.2"/>
+<vertex x="0.1" y="50.1"/>
 <vertex x="100.6" y="50.2"/>
 <vertex x="100.6" y="-0.6"/>
 <vertex x="0.2" y="-0.6"/>
 </polygon>
 <polygon width="0.4064" layer="1" isolate="1">
-<vertex x="0.7" y="49.8"/>
+<vertex x="0.8" y="50"/>
 <vertex x="100.2" y="49.8"/>
 <vertex x="100.2" y="-0.3"/>
 <vertex x="0.7" y="-0.3"/>
@@ -3521,21 +3523,21 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$18">
 <contactref element="U$1" pad="32"/>
-<contactref element="D1" pad="A"/>
-<wire x1="77.07" y1="42.55" x2="77.07" y2="43.33" width="0.4064" layer="1"/>
-<wire x1="77.07" y1="43.33" x2="72" y2="48.4" width="0.4064" layer="1"/>
+<wire x1="77.5" y1="42.9" x2="72" y2="48.4" width="0.4064" layer="1"/>
 <wire x1="72" y1="48.4" x2="43.4" y2="48.4" width="0.4064" layer="1"/>
 <wire x1="43.4" y1="48.4" x2="41.6" y2="46.6" width="0.4064" layer="1"/>
 <wire x1="41.6" y1="46.6" x2="41.6" y2="45.54" width="0.4064" layer="1"/>
 <wire x1="41.6" y1="45.54" x2="41.49" y2="45.43" width="0.4064" layer="1"/>
+<contactref element="D1" pad="A"/>
+<wire x1="77.5" y1="42.225" x2="77.5" y2="42.9" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="U$1" pad="31"/>
-<contactref element="D2" pad="A"/>
-<wire x1="73.71" y1="42.49" x2="72.61" y2="42.49" width="0.4064" layer="1"/>
-<wire x1="72.61" y1="42.49" x2="67.6" y2="47.5" width="0.4064" layer="1"/>
+<wire x1="72.775" y1="42.325" x2="67.6" y2="47.5" width="0.4064" layer="1"/>
 <wire x1="67.6" y1="47.5" x2="45.06" y2="47.5" width="0.4064" layer="1"/>
 <wire x1="45.06" y1="47.5" x2="42.99" y2="45.43" width="0.4064" layer="1"/>
+<contactref element="D2" pad="A"/>
+<wire x1="74" y1="42.325" x2="72.775" y2="42.325" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="U$1" pad="22"/>
@@ -3552,13 +3554,13 @@ design rules under a new name.</description>
 <wire x1="53.2" y1="18.43" x2="53.19" y2="18.42" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$15">
+<contactref element="R13" pad="1"/>
 <contactref element="D1" pad="C"/>
 <contactref element="D2" pad="C"/>
-<contactref element="R13" pad="1"/>
-<wire x1="70.07" y1="38.44" x2="73.66" y2="38.44" width="0.4064" layer="1"/>
-<wire x1="73.66" y1="38.44" x2="73.71" y2="38.39" width="0.4064" layer="1"/>
-<wire x1="73.71" y1="38.39" x2="77.01" y2="38.39" width="0.4064" layer="1"/>
-<wire x1="77.01" y1="38.39" x2="77.07" y2="38.45" width="0.4064" layer="1"/>
+<wire x1="70.07" y1="38.44" x2="73.835" y2="38.44" width="0.4064" layer="1"/>
+<wire x1="73.835" y1="38.44" x2="74" y2="38.275" width="0.4064" layer="1"/>
+<wire x1="74" y1="38.275" x2="77.4" y2="38.275" width="0.4064" layer="1"/>
+<wire x1="77.4" y1="38.275" x2="77.5" y2="38.175" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$16">
 <contactref element="R13" pad="2"/>
@@ -3623,6 +3625,15 @@ design rules under a new name.</description>
 <wire x1="82.3" y1="40.65" x2="82.35" y2="40.6" width="0.4064" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="4,1,9ff60cfe9ca83e5a"/>
+<approved hash="4,1,079c2f33eec8c667"/>
+<approved hash="4,1,7b514b9bb42cb906"/>
+<approved hash="4,1,7b236d0f511b9419"/>
+<approved hash="4,1,5fe83a74c4f3a3f7"/>
+<approved hash="4,1,585845631ed070bb"/>
+<approved hash="4,1,699ec53839cf93a9"/>
+</errors>
 </board>
 </drawing>
 </eagle>
