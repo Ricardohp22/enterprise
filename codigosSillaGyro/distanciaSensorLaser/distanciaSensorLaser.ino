@@ -2,6 +2,9 @@
 
 #define pwm 9
 #define buzzer 10
+#define movepin 7
+#define ofst 13 
+
 #define distancia_maxima_deteccion 50
 unsigned long timeIni = 0;
 unsigned long timeEnd = 0;
@@ -17,6 +20,8 @@ void setup()
   Serial.begin(9600);
   pinMode(pwm, OUTPUT);
   pinMode(buzzer, OUTPUT);
+  pinMode(ofst, INPUT_PULLUP);
+  pinMode(movepin, INPUT_PULLUP);
   // Iniciar sensor
   //Serial.println("VL53L0X test");
   if (!lox.begin())
@@ -26,7 +31,7 @@ void setup()
       ;
   }
     tone(buzzer, 523);
-  delay(100);
+    delay(100);
   //generar tono de 440Hz durante 1000 ms
 //  tone(buzzer, 440);
 //  delay(300);
@@ -54,7 +59,12 @@ void beep(int dis)
     }
     else
     {
-      tone(buzzer, 523);
+      if(!digitalRead(movepin)){
+        tone(buzzer, 523);
+      }else{
+        noTone(buzzer);
+      }
+      
     }
 
     if (flagBuzzerOn)
@@ -86,12 +96,16 @@ void loop()
 
   lox.rangingTest(&measure, false); // si se pasa true como parametro, muestra por puerto serie datos de debug
 
+  
   if (measure.RangeStatus != 4)
   {
     distancia = measure.RangeMilliMeter / 10;    
   }else{
     distancia = 200;
   }
+
+  
+  
   if (distancia > distancia_maxima_deteccion)
   {
     distancia = 200;

@@ -24,7 +24,6 @@ SoftwareSerial bt(9, 10);
 
 //#define xxPin A0 //ejex joystick
 //#define yyPin A1 //ejey joystick
-#define ppPin A2 //potenciometro
 #define pinAct 4
 #define frenos 7
 #define MotIzq 5
@@ -485,9 +484,7 @@ void setup()
   bt.setTimeout(50);
 
   Serial.println("Inicia");
-  //pinMode(xxPin,INPUT);
-  //pinMode(yyPin,INPUT);
-  pinMode(ppPin, INPUT);
+
   pinMode(frenos, OUTPUT);
   pinMode(pinAct, OUTPUT);
   pinMode(MotIzq, OUTPUT);
@@ -607,9 +604,9 @@ void leerJoystick(boolean bluetooth)
     if(yy_ > 0){
       yy_ = yy_*2;
     }
-    Serial.print(xx_);
+    /* Serial.print(xx_);
     Serial.print("  ");
-    Serial.println(yy_);
+    Serial.println(yy_); */
   }
   else
   {
@@ -663,17 +660,35 @@ void monitorModulo()
   {
     monitorModuloTime = millis();
     estatusSensores = Serial.readString();
+
+    
+    s1 = estatusSensores.substring(0, estatusSensores.indexOf("/")).toInt();
+    estatusSensores = estatusSensores.substring(estatusSensores.indexOf("/")+1, estatusSensores.length());
+    s2 = estatusSensores.substring(0, estatusSensores.indexOf("/")).toInt();
+    estatusSensores = estatusSensores.substring(estatusSensores.indexOf("/")+1, estatusSensores.length());
+    s3 = estatusSensores.substring(0, estatusSensores.indexOf("/")).toInt();
+    estatusSensores = estatusSensores.substring(estatusSensores.indexOf("/")+1, estatusSensores.length());
+    s4 = estatusSensores.substring(0, estatusSensores.indexOf("/")).toInt();
+    estatusSensores = estatusSensores.substring(estatusSensores.indexOf("/")+1, estatusSensores.length());
+    s5 = estatusSensores.substring(0, estatusSensores.indexOf("/")).toInt();
+    estatusSensores = estatusSensores.substring(estatusSensores.indexOf("/")+1, estatusSensores.length());
+    s6 = estatusSensores.substring(0, estatusSensores.length()).toInt();
+
+
+    Serial.print("s1: ");
+    Serial.print(s1);
+    Serial.print("s2: ");
+    Serial.print(s2);
+    Serial.print("s3: ");
+    Serial.print(s3);
+    Serial.print("s4: ");
+    Serial.print(s4);
+    Serial.print("s5: ");
+    Serial.print(s5);
+    Serial.print("s6: ");
+    Serial.println(s6);
   }
-  s1 = estatusSensores.substring(0, 1).toInt();
-  s2 = estatusSensores.substring(1, 2).toInt();
-  s3 = estatusSensores.substring(2, 3).toInt();
-  s4 = estatusSensores.substring(3, 4).toInt();
-  s5 = estatusSensores.substring(4, 5).toInt();
-  s6 = estatusSensores.substring(5, 6).toInt();
-  s7 = estatusSensores.substring(6, 7).toInt();
-  s8 = estatusSensores.substring(7, 8).toInt();
-  s9 = estatusSensores.substring(8, 9).toInt();
-  s10 = estatusSensores.substring(9, 10).toInt();
+  
 }
 int nuevoPwmI = 0;
 int nuevoPwmD = 0;
@@ -845,6 +860,7 @@ void bloqueoMotoresPorSensor()
 }
 void loop()
 {
+
   //  if(bt.available()){
   //    Serial.println("BT disponible");
   //    //leerJoystick(1);

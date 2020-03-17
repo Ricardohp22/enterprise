@@ -370,14 +370,13 @@ void loop()
                 }
                 else
                 {
-                    //Solo para pruebas, comentar en produccion
+                    
                     if (isAwake)
                     {
-                        Serial.print(vectorMagnitude);
-                        Serial.print("/");
+                        
                         Serial.print(rollFin);
                         Serial.print("/");
-                        Serial.println(pitchFin);
+                        Serial.print(pitchFin);
                     }else{
                         if(gestoWakeup == 0){
                             if(rollFin > 20){
