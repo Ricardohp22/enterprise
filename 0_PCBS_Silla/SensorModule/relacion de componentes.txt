@@ -1,0 +1,27 @@
+Relacion de componentes-sensorModule
+r1-10k
+r2-220
+r3-220
+r4-220
+r5-220
+r6-220
+r7-220
+r8-8.2k
+r9-8.2k
+r10-1k
+r11-1k
+r12-1k
+led1-0805 verde
+led2-0805 rojo
+q2-bc547b
+q3-bc547b
+c1-22pf
+c2-22pf
+c3-.1uf
+c4-100uf 16v
+c5-100uf 16v
+c6-100uf 16v
+c7-100uf 16v
+c8-100uf 16v
+c9-100uf 16v
+d1-1n4001

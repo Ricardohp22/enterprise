@@ -316,15 +316,15 @@
 <library name="cp150">
 <packages>
 <package name="CP150_1X4">
-<pad name="1" x="-2.2" y="0" drill="0.5"/>
-<pad name="2" x="-0.7" y="0" drill="0.5"/>
-<pad name="3" x="0.8" y="0" drill="0.5"/>
-<pad name="4" x="2.3" y="0" drill="0.5"/>
 <wire x1="-3.9" y1="-2.6" x2="4.1" y2="-2.6" width="0.127" layer="21"/>
 <wire x1="4.1" y1="-2.6" x2="4.1" y2="1.4" width="0.127" layer="21"/>
 <wire x1="4.1" y1="1.4" x2="-3.9" y2="1.4" width="0.127" layer="21"/>
 <wire x1="-3.9" y1="1.4" x2="-3.9" y2="-2.6" width="0.127" layer="21"/>
 <text x="-4" y="2.4" size="1.27" layer="25">&gt;name</text>
+<pad name="3" x="0.8" y="0" drill="0.5" shape="long" rot="R90"/>
+<pad name="4" x="2.3" y="0" drill="0.5" shape="long" rot="R90"/>
+<pad name="2" x="-0.7" y="0" drill="0.5" shape="long" rot="R90"/>
+<pad name="1" x="-2.2" y="0" drill="0.5" shape="long" rot="R90"/>
 </package>
 </packages>
 <symbols>

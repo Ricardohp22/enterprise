@@ -13572,9 +13572,9 @@ general purpose rectifier, 1 A</description>
 <label x="88.9" y="-5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PD2(INT0)"/>
-<wire x1="25.4" y1="-2.54" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
-<label x="30.48" y="-2.54" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PD3(INT1)"/>
+<wire x1="25.4" y1="-5.08" x2="27.94" y2="-5.08" width="0.1524" layer="91"/>
+<label x="30.48" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOVE" class="0">
@@ -13585,9 +13585,9 @@ general purpose rectifier, 1 A</description>
 <label x="22.86" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_PORT" gate="A" pin="6"/>
-<wire x1="81.28" y1="2.54" x2="86.36" y2="2.54" width="0.1524" layer="91"/>
-<label x="88.9" y="2.54" size="1.778" layer="95"/>
+<pinref part="SENSOR_PORT" gate="A" pin="11"/>
+<wire x1="73.66" y1="-5.08" x2="68.58" y2="-5.08" width="0.1524" layer="91"/>
+<label x="60.96" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -13640,9 +13640,9 @@ general purpose rectifier, 1 A</description>
 <label x="119.38" y="83.82" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SENSOR_PORT" gate="A" pin="4"/>
-<wire x1="81.28" y1="5.08" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
-<label x="88.9" y="5.08" size="1.778" layer="95"/>
+<pinref part="SENSOR_PORT" gate="A" pin="7"/>
+<wire x1="73.66" y1="0" x2="68.58" y2="0" width="0.1524" layer="91"/>
+<label x="60.96" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13720,21 +13720,21 @@ general purpose rectifier, 1 A</description>
 <label x="119.38" y="86.36" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SENSOR_PORT" gate="A" pin="2"/>
-<wire x1="81.28" y1="7.62" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
-<label x="88.9" y="7.62" size="1.778" layer="95"/>
+<pinref part="SENSOR_PORT" gate="A" pin="9"/>
+<wire x1="73.66" y1="-2.54" x2="68.58" y2="-2.54" width="0.1524" layer="91"/>
+<label x="60.96" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIG1" class="0">
 <segment>
+<pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
+<wire x1="25.4" y1="-10.16" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
+<label x="30.48" y="-10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="SENSOR_PORT" gate="A" pin="13"/>
 <wire x1="73.66" y1="-7.62" x2="68.58" y2="-7.62" width="0.1524" layer="91"/>
 <label x="60.96" y="-7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="PD3(INT1)"/>
-<wire x1="25.4" y1="-5.08" x2="27.94" y2="-5.08" width="0.1524" layer="91"/>
-<label x="30.48" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIG2" class="0">
@@ -13751,14 +13751,14 @@ general purpose rectifier, 1 A</description>
 </net>
 <net name="DIG4" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
-<wire x1="25.4" y1="-10.16" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
-<label x="30.48" y="-10.16" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SENSOR_PORT" gate="A" pin="10"/>
 <wire x1="81.28" y1="-2.54" x2="86.36" y2="-2.54" width="0.1524" layer="91"/>
 <label x="88.9" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD2(INT0)"/>
+<wire x1="25.4" y1="-2.54" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
+<label x="30.48" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -13804,9 +13804,9 @@ general purpose rectifier, 1 A</description>
 <label x="154.94" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_PORT" gate="A" pin="1"/>
-<wire x1="73.66" y1="7.62" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
-<label x="60.96" y="7.62" size="1.778" layer="95"/>
+<pinref part="SENSOR_PORT" gate="A" pin="8"/>
+<wire x1="81.28" y1="0" x2="86.36" y2="0" width="0.1524" layer="91"/>
+<label x="88.9" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM2" class="0">
@@ -13816,9 +13816,9 @@ general purpose rectifier, 1 A</description>
 <label x="154.94" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_PORT" gate="A" pin="3"/>
-<wire x1="73.66" y1="5.08" x2="68.58" y2="5.08" width="0.1524" layer="91"/>
-<label x="60.96" y="5.08" size="1.778" layer="95"/>
+<pinref part="SENSOR_PORT" gate="A" pin="6"/>
+<wire x1="81.28" y1="2.54" x2="86.36" y2="2.54" width="0.1524" layer="91"/>
+<label x="88.9" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM3" class="0">
@@ -13828,9 +13828,9 @@ general purpose rectifier, 1 A</description>
 <label x="154.94" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_PORT" gate="A" pin="5"/>
-<wire x1="73.66" y1="2.54" x2="68.58" y2="2.54" width="0.1524" layer="91"/>
-<label x="60.96" y="2.54" size="1.778" layer="95"/>
+<pinref part="SENSOR_PORT" gate="A" pin="4"/>
+<wire x1="81.28" y1="5.08" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
+<label x="88.9" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM4" class="0">
@@ -13840,9 +13840,9 @@ general purpose rectifier, 1 A</description>
 <label x="154.94" y="-5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_PORT" gate="A" pin="7"/>
-<wire x1="73.66" y1="0" x2="68.58" y2="0" width="0.1524" layer="91"/>
-<label x="60.96" y="0" size="1.778" layer="95"/>
+<pinref part="SENSOR_PORT" gate="A" pin="2"/>
+<wire x1="81.28" y1="7.62" x2="86.36" y2="7.62" width="0.1524" layer="91"/>
+<label x="88.9" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM5" class="0">
@@ -13852,9 +13852,9 @@ general purpose rectifier, 1 A</description>
 <label x="154.94" y="-15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_PORT" gate="A" pin="9"/>
-<wire x1="73.66" y1="-2.54" x2="68.58" y2="-2.54" width="0.1524" layer="91"/>
-<label x="60.96" y="-2.54" size="1.778" layer="95"/>
+<pinref part="SENSOR_PORT" gate="A" pin="1"/>
+<wire x1="73.66" y1="7.62" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
+<label x="60.96" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM6" class="0">
@@ -13864,17 +13864,12 @@ general purpose rectifier, 1 A</description>
 <label x="154.94" y="-25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SENSOR_PORT" gate="A" pin="11"/>
-<wire x1="73.66" y1="-5.08" x2="68.58" y2="-5.08" width="0.1524" layer="91"/>
-<label x="60.96" y="-5.08" size="1.778" layer="95"/>
+<pinref part="SENSOR_PORT" gate="A" pin="3"/>
+<wire x1="73.66" y1="5.08" x2="68.58" y2="5.08" width="0.1524" layer="91"/>
+<label x="60.96" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S1" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PC0(ADC0)"/>
-<wire x1="25.4" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
-<label x="30.48" y="25.4" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="25.4" x2="137.16" y2="25.4" width="0.1524" layer="91"/>
@@ -13884,13 +13879,13 @@ general purpose rectifier, 1 A</description>
 <label x="154.94" y="20.32" size="1.778" layer="95"/>
 <pinref part="C4" gate="G$1" pin="+"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC5(ADC5/SCL)"/>
+<wire x1="25.4" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
+<label x="30.48" y="12.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="S2" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PC1(ADC1)"/>
-<wire x1="25.4" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
-<label x="30.48" y="22.86" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="15.24" x2="137.16" y2="15.24" width="0.1524" layer="91"/>
@@ -13900,13 +13895,13 @@ general purpose rectifier, 1 A</description>
 <label x="154.94" y="10.16" size="1.778" layer="95"/>
 <pinref part="C5" gate="G$1" pin="+"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC4(ADC4/SDA)"/>
+<wire x1="25.4" y1="15.24" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
+<label x="30.48" y="15.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="S3" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PC2(ADC2)"/>
-<wire x1="25.4" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
-<label x="30.48" y="20.32" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="5.08" x2="137.16" y2="5.08" width="0.1524" layer="91"/>
@@ -13916,13 +13911,13 @@ general purpose rectifier, 1 A</description>
 <label x="154.94" y="0" size="1.778" layer="95"/>
 <pinref part="C6" gate="G$1" pin="+"/>
 </segment>
-</net>
-<net name="S4" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC3(ADC3)"/>
 <wire x1="25.4" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
 <label x="30.48" y="17.78" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="S4" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="-5.08" x2="137.16" y2="-5.08" width="0.1524" layer="91"/>
@@ -13932,13 +13927,13 @@ general purpose rectifier, 1 A</description>
 <label x="154.94" y="-10.16" size="1.778" layer="95"/>
 <pinref part="C7" gate="G$1" pin="+"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC2(ADC2)"/>
+<wire x1="25.4" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
+<label x="30.48" y="20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="S5" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PC4(ADC4/SDA)"/>
-<wire x1="25.4" y1="15.24" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
-<label x="30.48" y="15.24" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="-15.24" x2="137.16" y2="-15.24" width="0.1524" layer="91"/>
@@ -13948,13 +13943,13 @@ general purpose rectifier, 1 A</description>
 <label x="154.94" y="-20.32" size="1.778" layer="95"/>
 <pinref part="C8" gate="G$1" pin="+"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC1(ADC1)"/>
+<wire x1="25.4" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<label x="30.48" y="22.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="S6" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PC5(ADC5/SCL)"/>
-<wire x1="25.4" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
-<label x="30.48" y="12.7" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="-25.4" x2="137.16" y2="-25.4" width="0.1524" layer="91"/>
@@ -13963,6 +13958,11 @@ general purpose rectifier, 1 A</description>
 <wire x1="137.16" y1="-30.48" x2="152.4" y2="-30.48" width="0.1524" layer="91"/>
 <label x="154.94" y="-30.48" size="1.778" layer="95"/>
 <pinref part="C9" gate="G$1" pin="+"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC0(ADC0)"/>
+<wire x1="25.4" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
+<label x="30.48" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">

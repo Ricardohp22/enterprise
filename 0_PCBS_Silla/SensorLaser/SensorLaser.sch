@@ -77,49 +77,6 @@
 <packages>
 <package name="1X06">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="5.715" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-0.635" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
 <pad name="1" x="-6.35" y="0" drill="1.016" shape="long" rot="R90"/>
 <pad name="2" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
 <pad name="3" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
@@ -7430,15 +7387,15 @@ Source: 008-0260-0_E.pdf</description>
 <library name="cp150">
 <packages>
 <package name="CP150_1X4">
+<pad name="1" x="-2.2" y="0" drill="0.6"/>
+<pad name="2" x="-0.7" y="0" drill="0.6"/>
+<pad name="3" x="0.8" y="0" drill="0.6"/>
+<pad name="4" x="2.3" y="0" drill="0.6"/>
 <wire x1="-3.9" y1="-2.6" x2="4.1" y2="-2.6" width="0.127" layer="21"/>
 <wire x1="4.1" y1="-2.6" x2="4.1" y2="1.4" width="0.127" layer="21"/>
 <wire x1="4.1" y1="1.4" x2="-3.9" y2="1.4" width="0.127" layer="21"/>
 <wire x1="-3.9" y1="1.4" x2="-3.9" y2="-2.6" width="0.127" layer="21"/>
 <text x="-4" y="2.4" size="1.27" layer="25">&gt;name</text>
-<pad name="3" x="0.8" y="0" drill="0.5" shape="long" rot="R90"/>
-<pad name="4" x="2.3" y="0" drill="0.5" shape="long" rot="R90"/>
-<pad name="2" x="-0.7" y="0" drill="0.5" shape="long" rot="R90"/>
-<pad name="1" x="-2.2" y="0" drill="0.5" shape="long" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -7479,12 +7436,12 @@ Source: 008-0260-0_E.pdf</description>
 <description>Puerto SPI tipo arduino</description>
 <packages>
 <package name="HEAD-2X3">
-<pad name="6" x="-2.54" y="1.27" drill="0.8" rot="R90"/>
-<pad name="5" x="0" y="1.27" drill="0.8" rot="R90"/>
-<pad name="4" x="2.54" y="1.27" drill="0.8" rot="R90"/>
-<pad name="3" x="2.54" y="-1.27" drill="0.8" rot="R90"/>
-<pad name="2" x="0" y="-1.27" drill="0.8" rot="R90"/>
-<pad name="1" x="-2.54" y="-1.27" drill="0.8" rot="R90"/>
+<pad name="6" x="-2.54" y="1.27" drill="1" rot="R90"/>
+<pad name="5" x="0" y="1.27" drill="1" rot="R90"/>
+<pad name="4" x="2.54" y="1.27" drill="1" rot="R90"/>
+<pad name="3" x="2.54" y="-1.27" drill="1" rot="R90"/>
+<pad name="2" x="0" y="-1.27" drill="1" rot="R90"/>
+<pad name="1" x="-2.54" y="-1.27" drill="1" rot="R90"/>
 <wire x1="-3.81" y1="-2.54" x2="3.81" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-2.54" x2="3.81" y2="2.54" width="0.127" layer="21"/>
 <wire x1="3.81" y1="2.54" x2="-3.81" y2="2.54" width="0.127" layer="21"/>

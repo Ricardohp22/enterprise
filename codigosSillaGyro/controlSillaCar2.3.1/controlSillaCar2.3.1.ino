@@ -12,8 +12,8 @@
 //1           conexion bluetooth
 
 //Variables control de bateria
-#define limiteSup 901
-#define limiteInf 800
+#define limiteSup 864
+#define limiteInf 778
 int limite1 = 0;
 int limite2 = 0;
 int limite3 = 0;

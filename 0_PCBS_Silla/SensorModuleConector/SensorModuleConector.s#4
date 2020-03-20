@@ -398,7 +398,7 @@
 <instance part="U$9" gate="G$1" x="10.16" y="10.16" rot="R180"/>
 <instance part="U$10" gate="G$1" x="10.16" y="27.94" rot="R180"/>
 <instance part="U$11" gate="G$1" x="10.16" y="45.72" rot="R180"/>
-<instance part="JP2" gate="A" x="53.34" y="-38.1"/>
+<instance part="JP2" gate="A" x="66.04" y="7.62"/>
 </instances>
 <busses>
 </busses>
@@ -411,8 +411,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="12"/>
-<wire x1="58.42" y1="-43.18" x2="63.5" y2="-43.18" width="0.1524" layer="91"/>
-<label x="66.04" y="-43.18" size="1.778" layer="95"/>
+<wire x1="71.12" y1="2.54" x2="76.2" y2="2.54" width="0.1524" layer="91"/>
+<label x="78.74" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOVE" class="0">
@@ -468,8 +468,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="11"/>
-<wire x1="50.8" y1="-43.18" x2="45.72" y2="-43.18" width="0.1524" layer="91"/>
-<label x="38.1" y="-43.18" size="1.778" layer="95"/>
+<wire x1="63.5" y1="2.54" x2="58.42" y2="2.54" width="0.1524" layer="91"/>
+<label x="50.8" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -525,8 +525,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="7"/>
-<wire x1="50.8" y1="-38.1" x2="45.72" y2="-38.1" width="0.1524" layer="91"/>
-<label x="38.1" y="-38.1" size="1.778" layer="95"/>
+<wire x1="63.5" y1="7.62" x2="58.42" y2="7.62" width="0.1524" layer="91"/>
+<label x="50.8" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -582,8 +582,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="9"/>
-<wire x1="50.8" y1="-40.64" x2="45.72" y2="-40.64" width="0.1524" layer="91"/>
-<label x="38.1" y="-40.64" size="1.778" layer="95"/>
+<wire x1="63.5" y1="5.08" x2="58.42" y2="5.08" width="0.1524" layer="91"/>
+<label x="50.8" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIG1" class="0">
@@ -594,8 +594,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="13"/>
-<wire x1="50.8" y1="-45.72" x2="45.72" y2="-45.72" width="0.1524" layer="91"/>
-<label x="38.1" y="-45.72" size="1.778" layer="95"/>
+<wire x1="63.5" y1="0" x2="58.42" y2="0" width="0.1524" layer="91"/>
+<label x="50.8" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIG2" class="0">
@@ -606,8 +606,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="14"/>
-<wire x1="58.42" y1="-45.72" x2="63.5" y2="-45.72" width="0.1524" layer="91"/>
-<label x="66.04" y="-45.72" size="1.778" layer="95"/>
+<wire x1="71.12" y1="0" x2="76.2" y2="0" width="0.1524" layer="91"/>
+<label x="78.74" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIG4" class="0">
@@ -618,8 +618,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="10"/>
-<wire x1="58.42" y1="-40.64" x2="63.5" y2="-40.64" width="0.1524" layer="91"/>
-<label x="66.04" y="-40.64" size="1.778" layer="95"/>
+<wire x1="71.12" y1="5.08" x2="76.2" y2="5.08" width="0.1524" layer="91"/>
+<label x="78.74" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM1" class="0">
@@ -630,8 +630,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="8"/>
-<wire x1="58.42" y1="-38.1" x2="63.5" y2="-38.1" width="0.1524" layer="91"/>
-<label x="66.04" y="-38.1" size="1.778" layer="95"/>
+<wire x1="71.12" y1="7.62" x2="76.2" y2="7.62" width="0.1524" layer="91"/>
+<label x="78.74" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM2" class="0">
@@ -642,8 +642,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="6"/>
-<wire x1="58.42" y1="-35.56" x2="63.5" y2="-35.56" width="0.1524" layer="91"/>
-<label x="66.04" y="-35.56" size="1.778" layer="95"/>
+<wire x1="71.12" y1="10.16" x2="76.2" y2="10.16" width="0.1524" layer="91"/>
+<label x="78.74" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM3" class="0">
@@ -654,8 +654,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="4"/>
-<wire x1="58.42" y1="-33.02" x2="63.5" y2="-33.02" width="0.1524" layer="91"/>
-<label x="66.04" y="-33.02" size="1.778" layer="95"/>
+<wire x1="71.12" y1="12.7" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
+<label x="78.74" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM4" class="0">
@@ -666,8 +666,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="2"/>
-<wire x1="58.42" y1="-30.48" x2="63.5" y2="-30.48" width="0.1524" layer="91"/>
-<label x="66.04" y="-30.48" size="1.778" layer="95"/>
+<wire x1="71.12" y1="15.24" x2="76.2" y2="15.24" width="0.1524" layer="91"/>
+<label x="78.74" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM5" class="0">
@@ -678,8 +678,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="1"/>
-<wire x1="50.8" y1="-30.48" x2="45.72" y2="-30.48" width="0.1524" layer="91"/>
-<label x="38.1" y="-30.48" size="1.778" layer="95"/>
+<wire x1="63.5" y1="15.24" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
+<label x="50.8" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM6" class="0">
@@ -690,8 +690,8 @@
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="3"/>
-<wire x1="50.8" y1="-33.02" x2="45.72" y2="-33.02" width="0.1524" layer="91"/>
-<label x="38.1" y="-33.02" size="1.778" layer="95"/>
+<wire x1="63.5" y1="12.7" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
+<label x="50.8" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

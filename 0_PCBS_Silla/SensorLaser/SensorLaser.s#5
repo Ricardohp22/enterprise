@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7608,7 +7608,7 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="R1" gate="G$1" x="-71.12" y="27.94"/>
 <instance part="DATA" gate="G$1" x="48.26" y="-5.08" rot="R180"/>
 <instance part="U$1" gate="G$1" x="25.4" y="-35.56"/>
-<instance part="U$2" gate="G$1" x="10.16" y="-17.78"/>
+<instance part="U$2" gate="G$1" x="20.32" y="-20.32"/>
 </instances>
 <busses>
 </busses>
@@ -7631,12 +7631,22 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-7.62" y1="17.78" x2="-5.08" y2="17.78" width="0.1524" layer="91"/>
 <label x="-2.54" y="17.78" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SENSOR" gate="A" pin="3"/>
+<wire x1="15.24" y1="17.78" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
+<label x="22.86" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC5(ADC5/SCL)"/>
 <wire x1="-7.62" y1="15.24" x2="-5.08" y2="15.24" width="0.1524" layer="91"/>
 <label x="-2.54" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SENSOR" gate="A" pin="4"/>
+<wire x1="15.24" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
+<label x="22.86" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -7666,8 +7676,7 @@ Source: 008-0260-0_E.pdf</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="2"/>
 <pinref part="BUZZ" gate="G$1" pin="-"/>
-<wire x1="15.24" y1="-10.16" x2="25.4" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-10.16" x2="25.4" y2="0" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-12.7" x2="25.4" y2="0" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="0" x2="27.94" y2="0" width="0.1524" layer="91"/>
 <label x="30.48" y="0" size="1.778" layer="95"/>
 </segment>
@@ -7701,6 +7710,11 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-55.88" y1="-5.08" x2="-58.42" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="-5.08" x2="-58.42" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-81.28" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SENSOR" gate="A" pin="5"/>
+<wire x1="15.24" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
+<label x="22.86" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -7751,6 +7765,11 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-58.42" y1="-7.62" x2="-58.42" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-81.28" y="-10.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SENSOR" gate="A" pin="6"/>
+<wire x1="15.24" y1="25.4" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
+<label x="22.86" y="25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RST" class="0">
 <segment>
@@ -7779,6 +7798,11 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="-7.62" y1="-30.48" x2="-5.08" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-2.54" y="-30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="-12.7" x2="12.7" y2="-12.7" width="0.1524" layer="91"/>
+<label x="5.08" y="-12.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -7792,63 +7816,6 @@ Source: 008-0260-0_E.pdf</description>
 <label x="-2.54" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="SENSOR" gate="A" pin="6"/>
-<wire x1="15.24" y1="25.4" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
-<label x="22.86" y="25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="SENSOR" gate="A" pin="5"/>
-<wire x1="15.24" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
-<label x="22.86" y="22.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="SENSOR" gate="A" pin="4"/>
-<wire x1="15.24" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
-<label x="22.86" y="20.32" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="SENSOR" gate="A" pin="3"/>
-<wire x1="15.24" y1="17.78" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
-<label x="22.86" y="17.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="SENSOR" gate="A" pin="2"/>
-<wire x1="15.24" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
-<label x="22.86" y="15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="SENSOR" gate="A" pin="1"/>
-<wire x1="15.24" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
-<label x="22.86" y="12.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PD2(INT0)"/>
-<pinref part="BUZZ" gate="G$1" pin="+"/>
-<wire x1="-7.62" y1="0" x2="5.08" y2="0" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="-10.16" x2="5.08" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="PD3(INT1)"/>
-<wire x1="5.08" y1="-2.54" x2="-7.62" y2="-2.54" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="MOVE" class="0">
 <segment>
 <pinref part="DATA" gate="G$1" pin="3"/>
@@ -7859,6 +7826,15 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="IC1" gate="G$1" pin="PD4(XCK/T0)"/>
 <wire x1="-7.62" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="91"/>
 <label x="-2.54" y="-5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="BUZZ" gate="G$1" pin="+"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="PB2(SS/OC1B)"/>
+<wire x1="2.54" y1="-22.86" x2="-7.62" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
